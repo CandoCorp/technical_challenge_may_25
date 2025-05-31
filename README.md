@@ -7,14 +7,17 @@ I expect this to take around 2 hours to complete. If it seems like it will take 
 ## Part 0: Get the data
 - Go to this page [https://nces.ed.gov/ccd/CCDLocaleCode.asp] and download the dataset described as:
   
-- Year 2005-2006 (v.1b), States A-I, ZIP (769 KB) CSV File. This is the only file you will be using. You can ignore the other files on this page.
+- Year 2005-2006 (v.1b), States A-I, ZIP (769 KB) CSV File. This is the only file you will be using. You can ignore the other files on this page. [https://nces.ed.gov/ccd/pdf/sl051bgen.pdf]
 - You may also find it helpful to consult the documentation for this dataset.
 - Unzip the file, rename it to school_data.csv, and put it in the directory named seed where you'll write your API.
 
 Now you have the data you need to get started.
 
 ## Part 1: Load data from CSV and compute stats.
-The API should load the data, when it starts populating a DB (please use something like SQLite or any in memory DB) and create a controller that allows a CRUD for it. Please treat each row 
+- Create an API that should load the data at startup. 
+- Populating a DB (please use something like SQLite or any in memory DB).
+- Create a controller that allows a CRUD operations for reloading or reseting the dataset.
+- Also a controller for cleaning and reading the data.
 
 ### Guidelines
 - Create a controller that allows CRUD operations to that dataset. 
